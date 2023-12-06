@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box; /* Border-box: padding use korle box boro hoi. Atake control kore. */
+    scroll-behavior: smooth;     /* about page a click korle smoothly scroll hobe. suddenly na*/
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Oswald', sans-serif;}
+p{font-family: Open Sans;}
+/*------headline a oswald use so h ke dia upore only open sens p are jonn raklam------*/
+/*------welcome part start------*/
+ul{list-style: none;padding: 0;margin: 0;}
+a{text-decoration: none;color: black;font-family: Open Sans;}
+img{vertical-align: middle;}
+.welcome_part{background: #0872b9;color: white;}
+.welcome_con p{margin: 0;}
+.welcome_icon li a {color: white;transition: .4s;}
+.welcome_icon li a:hover {color: #353535}
+/*------menu part start------*/
+a.nav-link:hover{color: #0872b9;}
+/*------hero part start------*/
+.hero_area{padding: 90px 0;
+background: url(../img/1image.png)no-repeat center;
+background-size: cover;
+}
+.hero_con h2{font-size: 35px;
+font-weight: 400;}
+.hero_con h1{font-size: 50px;
+font-weight: 700;}
+.hero_con p{font-size: 18px;
+    line-height: 1.5;
+}
+.hero-btn a {
+    font-weight: 600;
+    border-radius: 0;
+    background: #0872b9;
+    border: 0;
+    padding: 9px 16px;
+    color: white;
+    margin: 7px;
+    transition: .4s;
+}
+.hero-btn a:hover {background: transparent;
+border: 1px solid white;
+}
+/*------about part start------*/
+.about_headline {padding: 60px 0 40px; 
+}
+.headline h3{font-size: 24px;}
+
+.div_01{width: 46px;
+height: 1px;
+background-color: #0872b9;
+}
+.div_02{width: 3px;
+height: 1px;
+background-color: #0872b9;
+}
+.div_03{width: 2px;
+height: 1px;
+background-color: #0872b9;
+}
+.div_04{width: 1px;
+height: 1px;
+background-color: #0872b9;
+}
+.about_con p{line-height: 1.8;}
+
+/*------service part start ------*/
+.service_con{padding: 50px 20px 15px;
+    background: #f1f1f1;}
+.service_icon{height: 80px;width: 80px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 8px double white;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.service_con h4{
+    font-size: 20px;
+    color: #353535;
+    text-transform: uppercase;
+}
+.service_con p{
+    font-size: 15px;
+    color: #353535;
+   line-height: 1.4;
+}
+.service_con:hover .service_icon{background: #5bc5f3;transition: .4s;}/*------https://getcssscan.com/css-box-shadow-examples------*/
+/* .service_con:hover{box-shadow: rgba(0, 0, 0, .20)0 0 24px 6px;} */
+.service_con:hover{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;transition: .4s;}
+
+/*-----------------------Port-folio start --------------------*/
+.img_con{line-height: 2px;}
+.portfolio_overlay{width: 100%;height: 100%;
+background: rgba(0, 0, 0, 0.8);
+display: flex;justify-content: center;align-items: center;
+position: absolute;
+left: 0;top: 0;
+opacity: 0;
+visibility: hidden;
+transition: .4s;
+}
+.portfolio_overlay a{width:40px;height: 40px;
+background-color: #5bc5f3;color: white;
+border-radius: 50%;display: block;
+display: flex;align-items: center;justify-content: center;}
+.portfolio_img{position: relative;}
+.portfolio_img:hover .portfolio_overlay{opacity: 1;
+visibility: visible;
+}
+
+/*--------------------------Team-part start ------------------*/
+.team_img{position: relative;transition: .4s;}
+.team_overlay ul li a:hover{background: #5bc5f3;
+}
+.team_img:hover .team_overlay{visibility: visible;opacity: 1;}
+.team_img:hover {box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.team_img:hover +h5{color: #5bc5f3;}
+.team_img +h5{transition: .4s}/*----sibling selector + same class er under a--*/
+.team_overlay{width: 33.33%;height: 100%;background: rgba(0, 0, 0, 0.60);
+display: flex;justify-content: center;align-items: center;position: absolute;
+top: 0;
+right: 0;
+visibility:hidden;
+opacity: 0;
+transition: .4s;
+}
+.team_overlay ul li a {width: 43px;height: 43px;background: transparent;
+border-radius: 50%;border: 1px solid white;display: block;
+display: flex;justify-content: center;align-items: center;
+color: white;margin: 12px 0;transition: .4s;
+}
+.team_con h6{color:#555555;font-weight: 400;}
+/*---------------------Testimonial-part-start -----------------*/
+.testi_con{background:#f1f1f1; position: relative;}
+.testi_icon li {color:#5bc5f3;}
+.testi_con h6 {color:#555555;}
+.testi_con p {color:#555555;font-family: 'Oswald'}
+.pointer{background: #f1f1f1;
+width: 30px;
+height: 30px;
+position: absolute;
+left: 50%;
+top: -15px;
+transform: translateX(-50%)rotate(45deg);
+}
+.testi_img { margin-bottom: 40px;}
+/*-----------------------footer part start ---------------------*/
+
+.footer_up{background: #353535;}
+.footer_icon{width: 40px;height: 40px;background: #5bc5f3;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+}
+.footerup_con p{font-size: 13px;}
+.footerup_con {font-size: 13px;}
+.footerup_imp ul li a{color: #f1f1f1;line-height: 2.5;transition: .4s;}
+.footerup_imp ul li a:hover{color: #5bc5f3
+}
+
+.footer_below{background: #555555;color: white;font-size: 13px;}
+.footer_below p{padding: 16px;}
+
+
+/*------------------j-query ---------------------*/
+.navbar{position: sticky; top: 0; z-index: 9;
+transition: .4s;}
+.bg_color{background:#0872b9;animation: bgDown 0.4s ease-out;}/*--vive on menubar from up to down--*/
+@keyframes bgDown {
+    from{transform: translateY(-100px);}
+    to{transform: translateY(0px);}}
+.bg_color .nav-link{color: white;}
+.bg_color .nav-link:hover{color:orange}
+.img_white{display: none;}/*---normally black logo none---*/
+.bg_color .img_black{display: none;}/*--.bg_color active takle-black logo none---*/
+.bg_color .img_white{display: block;}/*--.bg_color active takle-white logo show korbe ---*/
+
+.back_to_top {position:fixed;bottom: 15px;right: 15px;
+display: none; /*-- first time test then jq use korbo for condition--*/
+animation:btt 0.4s ease-in ;
+}
+@keyframes btt {
+    from{transform: translateY(100px);}
+    to{transform: translateY(0px);}}
+
+    /*---preloader start---*/
+.preloader{position: fixed;top: 0;
+width: 100%;
+height: 100vh;
+background: white;z-index: 10;
+display: flex;justify-content: center;align-items: center;
+}
+    /*---below preloader past from https://www.cssportal.com/css-loader-generator/---*/
+    .custom-loader {
+        width: 50px;
+        height: 50px;
+        display: grid;
+        border-radius: 50%;
+        -webkit-mask:radial-gradient(farthest-side,#0000 40%,#000 41%);
+        background:
+          linear-gradient(0deg ,#CF25F480 50%,#CF25F4FF 0) center/4px 100%,
+          linear-gradient(90deg,#CF25F440 50%,#CF25F4BF 0) center/100% 4px;
+        background-repeat: no-repeat;
+        animation: s3 1s infinite steps(12);
+      }
+   
+      .custom-loader::after {
+         content:"";
+         grid-area: 1/1;
+         border-radius: 50%;
+         background:inherit;
+         opacity: 0.915;
+         transform: rotate(30deg);
+      }
+      .custom-loader::after {
+         opacity: 0.83;
+         transform: rotate(60deg);
+      }
+      
+      @keyframes s3 {
+        100% {transform: rotate(1turn)}
+      }
+    
+    /*---preloader end---*/
